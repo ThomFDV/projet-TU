@@ -6,6 +6,11 @@ import {routes} from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './core/components/home/home.component';
+import {LoginComponent} from './core/components/login/login.component';
+import {FooterComponent} from './core/components/footer/footer.component';
+import {HeaderComponent} from './core/components/header/header.component';
+import {NotFoundComponent} from './core/components/not-found/not-found.component';
+import {SearchSomethingComponent} from './core/components/search-something/search-something.component';
 
 describe('Router: App', () => {
     let location: Location;
@@ -15,7 +20,15 @@ describe('Router: App', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [RouterTestingModule.withRoutes(routes), HttpClientModule],
-            declarations: [AppComponent],
+            declarations: [
+                AppComponent,
+                HomeComponent,
+                LoginComponent,
+                FooterComponent,
+                HeaderComponent,
+                NotFoundComponent,
+                SearchSomethingComponent
+            ],
         });
 
         router = TestBed.get(Router);
