@@ -5,7 +5,7 @@ import {NotFoundComponent} from './core/components/not-found/not-found.component
 import {LoginComponent} from './core/components/login/login.component';
 import {SearchSomethingComponent} from './core/components/search-something/search-something.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
