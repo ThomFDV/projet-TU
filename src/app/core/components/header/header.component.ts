@@ -17,10 +17,13 @@ export class HeaderComponent implements OnInit {
   constructor(private localService: LocalStorageService,
               private router: Router,
               private messageService: MessageService,
-              private noNamePipe: NoNamePipe) { }
+              private noNamePipe: NoNamePipe) {
+    this.user = {};
+  }
 
   ngOnInit() {
     this.user.lastname = 'Martinez';
+    this.user.firstname = 'Onsenbaslescouilles';
     this.changeLastname.emit(this.user.lastname);
   }
 
